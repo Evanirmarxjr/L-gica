@@ -1,15 +1,22 @@
 programa
 {
-	inclua biblioteca Util
 	
 	funcao inicio()
 	{
-		cadeia usuarios [3]
+		inteiro numero
+		escreva("Digite um nº: ")
+		leia(numero)
+		escreva("O fatorial de: ",numero," é ",fatorial(numero)) 
+	}
 
-		usuarios[0] = "Fulano"
-		usuarios[1] = "Beltrano"
-		usuarios[2] = "Ciclano"
-		
+	funcao inteiro fatorial(inteiro numero){
+		inteiro resultado
+		se(numero <=1){
+			retorne 1
+		}senao{
+			resultado = fatorial(numero-1) * numero
+			retorne resultado
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 160; 
+ * @POSICAO-CURSOR = 70; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

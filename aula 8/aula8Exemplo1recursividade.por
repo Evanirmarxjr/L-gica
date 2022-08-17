@@ -1,15 +1,24 @@
 programa
 {
-	inclua biblioteca Util
 	
 	funcao inicio()
-	{
-		cadeia usuarios [3]
+	{/*
+		para(inteiro i=20; i > 0; i--){
+			escreva(i,",")
 
-		usuarios[0] = "Fulano"
-		usuarios[1] = "Beltrano"
-		usuarios[2] = "Ciclano"
-		
+		}
+		*/
+
+			imprimirNumeros(20)
+	}
+	funcao imprimirNumeros(inteiro n){
+		//funcao recursiva
+		se(n==0){
+			escreva(n)
+		}senao{
+			escreva(n,",")
+			imprimirNumeros(n-1)
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,9 +26,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 160; 
+ * @POSICAO-CURSOR = 186; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {n, 14, 32, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

@@ -1,15 +1,18 @@
 programa
 {
-	inclua biblioteca Util
-	
+	//Faça um algoritmo que leia as cinco vogais 
+	//e exiba na tela na ordem inversa
 	funcao inicio()
 	{
-		cadeia usuarios [3]
+		caracter vogal[5]
+		para(inteiro i=0; i < 5; i++){
+			escreva("Digite a vogal: ")
+			leia(vogal[i])
+		}
+		para(inteiro i=4; i >= 0; i--){
+			escreva(vogal[i],"\")
 
-		usuarios[0] = "Fulano"
-		usuarios[1] = "Beltrano"
-		usuarios[2] = "Ciclano"
-		
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,7 +20,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 160; 
+ * @POSICAO-CURSOR = 270; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
